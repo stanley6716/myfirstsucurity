@@ -21,4 +21,4 @@ Options:
     -s [+][-]seek  start at <seek> bytes abs. (or +: rel.) infile offset.
     -u          use upper case hex letters.
     -v          show version: "xxd V1.10 27oct98 by Juergen Weigert".
-    ```
+
