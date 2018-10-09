@@ -98,5 +98,20 @@ Supported ciphers:
 -rc2-64-cbc                -rc2-cbc                   -rc2-cfb                  
 -rc2-ecb                   -rc2-ofb                   -rc4                      
 -rc4-40                    -seed                      -seed-cbc                 
--seed-cfb                  -seed-ecb                  -seed-ofb                 
+-seed-cfb                  -seed-ecb                  -seed-ofb           
+
+```
+
+root@kali:~# openssl des -in infile -out infile.des
+enter des-cbc encryption password:
+Verifying - enter des-cbc encryption password:
+root@kali:~# cat infile
+123456789
+root@kali:~# cat infile.des
+Salted__���+r���ͤX��m�2��+�i
+root@kali:~# openssl des -d -in infile.des -out sol
+enter des-cbc decryption password:
+root@kali:~# cat sol
+123456789
+
 
