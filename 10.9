@@ -114,4 +114,34 @@ enter des-cbc decryption password:
 root@kali:~# cat sol
 123456789
 
+root@kali:~# echo "i am the best" > me
+root@kali:~# openssl des -in me -out me.des
+enter des-cbc encryption password:
+Verifying - enter des-cbc encryption password:
+root@kali:~# cat me.des
+v0�z�֍`�����i
+root@kali:~# cat me
+i am the best
+root@kali:~# openssl des -d -in me.des -out sss
+enter des-cbc decryption password:
+root@kali:~# cat sss
+i am the best
+```
+root@kali:~# echo "HappyHackingDay > test.txt"
+HappyHackingDay > test.txt
+root@kali:~# echo "HappyHackingDay" > test.txt
+root@kali:~# openssl dgst -md5 -c test.txt 
+MD5(test.txt)= 79:50:86:fd:74:d8:48:fe:7b:de:d8:77:10:a1:20:b4
+root@kali:~# md5sum test.txt 
+795086fd74d848fe7bded87710a120b4  test.txt
+root@kali:~# openssl dgst -sha1 -c test.txt 
+SHA1(test.txt)= 64:56:39:fe:1d:f6:40:25:c9:1e:69:43:3b:d5:aa:b3:b2:87:2b:82
+root@kali:~# sha1sum test.txt 
+645639fe1df64025c91e69433bd5aab3b2872b82  test.txt
+root@kali:~# openssl dgst -md4 -c test.txt 
+MD4(test.txt)= 93:3d:73:72:9a:e1:7d:1c:7d:a9:b8:34:b9:58:b6:2b
+root@kali:~# md4sum test.txt 
+bash: md4sum: command not found
+
+
 
