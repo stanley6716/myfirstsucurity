@@ -143,5 +143,27 @@ MD4(test.txt)= 93:3d:73:72:9a:e1:7d:1c:7d:a9:b8:34:b9:58:b6:2b
 root@kali:~# md4sum test.txt 
 bash: md4sum: command not found
 
+```
+root@kali:~# python2
+Python 2.7.14 (default, Sep 17 2017, 18:50:44) 
+[GCC 7.2.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a='happyHackingDay'
+>>> import hashlib
+>>> print hashlib.md5(a).hexdigest()
+577df7b014a1c6cc8008775762238855
+>>> print hashlib.sha1(a).hexdigest()
+828aff8e4e37225ae5b01c4d18c34c50fcb9bda4
+>>> print hashlib.sha224(a).hexdigest()
+203a41bba9e94b0779186c7a8e83884126dc1bf167a43b92f2e22a35
+>>> print hashlib.sha256(a).hexdigest()
+5ef58ad88418743d48e4bc2222fcb2131d4b7fcabdbd3d303bd78bbb77b05f27
+>>> print hashlib.sha384(a).hexdigest()
+b13af2de8cd3b27ff4d94aa67c35d8e122598f879ca69ad1a4d81ccef685ed200c04000ebffbb1c529bfa013eb9462b5
+>>> print hashlib.sha512(a).hexdigest()
+36edb843b82852d9896c5b34d0a98f5f7236e704574bbf632b5358f68a21ab4f641122e0f7bdf71a506ed86316398f826be24cebda1a7cf20b3cd7f204f4e2ae
+
+
+
 
 
