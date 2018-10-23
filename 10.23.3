@@ -1,0 +1,69 @@
+root@kali:~#  openssl genrsa -out private.pem
+Generating RSA private key, 2048 bit long modulus
+....+++
+..........................+++
+e is 65537 (0x010001)
+```
+root@kali:~# cat private.pem
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEA7TojoNMz5A7rYDDoPqGdBPhcPPO+8O0FQHK1rPw3QUFmOKZe
+bJNSxYdZVtCelu2wwAu2rpbWCNOwN+CeJ2z2f82iV3LcT+RJBgWrQl7gihANgbyH
+jLULyqThV7adhGMSv3IznA781/AuqSpfukMS9rzMEQkUocoXu02kntEA7+oQB8VF
+V1zlZPaF3UlUlLh9gcOTzO2vnOZ6/Z2qvri3vxatMSTJBGXWN+SLR8RUMEW2d8ut
+F+A76XXx34B7ZNNuJcoxwf2wDrHfsJkyDmaZ2JY4XAdYxM2NQeMMw8IegydUebgF
+O8TxMj0D5DI+Glf3yXHL8o194+m2c1jq8yK1jQIDAQABAoIBAHw0SX0lt3B7Yz88
+vAw2v6hfhKOhFuK7pllE9dv5PdDbtfKJIL0GMXscT2lF1xK8piMWvvIQJUX/166Z
+2xRXV4Q4nPveNn1Zz+XoR+97D2MZ3oiDthC0pdTWmOk8wqIS4Tj9SQo3Sqigpz2I
+4w/5mE85MDrnHzdKQTye/UbttOjnCKatUrYyTSgmQTgnZ2IM9QhYdC5MMfaOdZWy
+dWjaLcy3baihwQKJYAQ14UVhGL22p4D5xQFnFxvlxzSm9YSjTI7hZS79VT4HEMLd
+biM2S/Km5zOAC9LSzv8GdbGT/ImdKdj69bzqUcgrK5x9a5hpdOEviYbGxYWVt9DK
+vJbI2B0CgYEA+NCLVLvMz1oYyyFR3gND+QY6SVpjL2+HF4VOeMpWRmgM9h07oc3c
+79RbZyKS5JzsyGy3XyxruaC3R1yvvp3S2NyXFnmBolFu1AvHN2WnwiYYtY9XTfhC
+tJxcZiNZsO92UGJY0glsv/kDJZEp0RZB/8O+iF2hMkMaJBLSmkCBs6sCgYEA9BPu
+CBFaTI/lM8vkAk/MVk5MWuhbqQi3A4YYsZcoiP+tts8JpbcJFgk/Khq+zuzUEzU6
++x6Juxrr/T1kXnoL1RxzVeRKZLEAalBEMB4yTbnx1Q79RAnm80haXbhWPOf2b0N7
+LB/0EGhZLsp04b9uiloq4k5wdcOCRpCVIwjCg6cCgYBdjQOmI0pZeBW0Yl3GrNGk
+0uudYufCERvpAw1DK0iPBlZBPzKJnr6ASgbn2z8Bx+LbZMz5ctk6HSxsH3RQpkR9
+l0sTfzH3lsil35vSv1z5CZvmv/NidIKYJ+Yx3P6/IPoKNUASEMsbzwOY32CqpcTA
+5pc/7HxMSqCMias3piNeKwKBgQDoL61Yb2l/O8PGKkeVC2RPFdz8/d10R54R9Ba5
+mhoteUw/g2SiCCTUmadE3nx1TEXSn+ijysErBMlJ9oTsex2WdaIiKzG558eFWyYC
+wDcKScEL9V5owyK4fDO6xAkFl4SPA5rAtwTuNtXf9SiLOBhn9K6m6geBf6MGjbPR
+yBuCMQKBgHJ9hM7CwBhyytDI2ZQ3YDNJ7ZBPg206Z9X8K3dQk5Hxm+ibr9CY35mw
+c3ntkMw3G18fkcNS3vZtlweWsq9+Ye2eFO49IhSWzjykQiSco/6h4KvdRYTnoZUj
+8BaQHJuf11ILQkbbEbMGYxwDfLdO5PFRQwdGhyWpCB1GlynsNYAY
+-----END RSA PRIVATE KEY-----
+```
+root@kali:~# openssl rsa -in private.pem -out public.pem -outform PEM -pubout
+writing RSA key
+```
+root@kali:~# cat public.pem 
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7TojoNMz5A7rYDDoPqGd
+BPhcPPO+8O0FQHK1rPw3QUFmOKZebJNSxYdZVtCelu2wwAu2rpbWCNOwN+CeJ2z2
+f82iV3LcT+RJBgWrQl7gihANgbyHjLULyqThV7adhGMSv3IznA781/AuqSpfukMS
+9rzMEQkUocoXu02kntEA7+oQB8VFV1zlZPaF3UlUlLh9gcOTzO2vnOZ6/Z2qvri3
+vxatMSTJBGXWN+SLR8RUMEW2d8utF+A76XXx34B7ZNNuJcoxwf2wDrHfsJkyDmaZ
+2JY4XAdYxM2NQeMMw8IegydUebgFO8TxMj0D5DI+Glf3yXHL8o194+m2c1jq8yK1
+jQIDAQAB
+-----END PUBLIC KEY-----
+```
+root@kali:~# echo xxx>file
+```
+root@kali:~# openssl rsautl -encrypt -inkey public.pem -pubin -in file -out file.rsa
+```
+root@kali:~# cat file.rsa 
+��7���u�څ�S��N�t�vs��;�O��s��>Tq��:�;]W;�����D}�N��r�������7|$�Tɐ�|��
+           A)��^��߸��7<�j�Q�d�+PJ�y�c��:����`�]k$��=	nQ׷�Pس�.L���]����E���W���
+�{����>���C��mL�[��h2
+                         ������
+                               [��Xa�DU�!�+m;f�e�
+�!	.��I'd3у.�DQ=��J�|
+```
+root@kali:~# openssl rsautl -decrypt -inkey private.pem -in file.rsa -out file.sol
+```
+root@kali:~# cat file.sol 
+xxx
+
+
+
+
