@@ -1,0 +1,3380 @@
+```
+import requests
+url = 'https://www.tnfsh.tn.edu.tw/bin/home.php'
+html = requests.get(url)
+html.encoding="utf-8"
+if html.status_code == requests.codes.ok:
+    print(html.text)
+    
+    ```
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><meta name="keywords" content="請填寫網站關鍵記事，用半角逗號(,)隔開" />
+<meta name="description" content="請填寫網站簡述" />
+<meta content="index,follow" name="robots">
+<title>臺南一中 </title>
+<link rel="stylesheet" href="/ezfiles/0/1000/static/combine-zh-tw.css" type="text/css" />
+<!--[if lte IE 6]> 
+<link rel="stylesheet" href="/style/style-ie6.css" type="text/css" /> 
+<![endif]-->
+<Link rel="SHORTCUT ICON"  href="/ezfiles/0/1000/sys_1000_5899370_87126.ico" type="image/x-icon" />
+<link rel="Bookmark" href="/ezfiles/0/1000/sys_1000_5899370_87126.ico">
+<script type="text/javascript" src='/lib/js/jquery.js'></script>
+<script type="text/javascript" src='/lib/js/jquery-migrate.js'></script>
+<noscript>Your browser does not support JavaScript!</noscript>
+<script language="javascript"><!--
+ var isHome = true 
+ --></script>
+<noscript>Your browser does not support JavaScript!</noscript>
+<script type="text/javascript" src="/js/20171104.php"></script><noscript>Your browser does not support JavaScript!</noscript>
+<script type="text/javascript" src='/lib/js/calendar/scw.zh-tw.js'></script><noscript>Your browser does not support JavaScript!</noscript>
+<script type="text/javascript" src='/lib/js/calendar/scw.js'></script><noscript>Your browser does not support JavaScript!</noscript>
+<script type='text/javascript'>
+var divOs = new divOsClass('divOs');
+divOs.setInfo('imagedir','/images');
+divOs.setInfo('styledir','/style');
+divOs.setInfo('waitWord','');
+var _SiteCounter=6402393
+divOs.Cookie.setCookie('_counter',_SiteCounter,0,'')
+
+$(document).ready(function(){
+   divOs.runOnload();
+});
+var ssoLoginUrl = "";
+</script><noscript>Your browser does not support JavaScript!</noscript>
+</head>
+
+<body class="page_home">
+<!-- Outer Container Begin  -->
+<!-- Outer's Width, LAYOUT=Center/Left/Right -->
+<div class="outer-outer">
+<div class="outer layout_type"><div class="container"><div class="container-inner">
+	<!-- Head Begin -->
+	<div class="mainhead"><div class="mainhead-inner">
+		<div id="Dyn_head">
+
+
+<div class="head_03">
+<div class="head_02">
+<div class="head_01">
+<!--amy edit start-->
+
+<div class="h1 sitename">臺南一中</div>
+
+<!--amy edit end-->
+<div class="slogan"></div>
+<div class="logobanner">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" summary=""><tbody><tr>
+<td><div class="logo"><a href="/bin/home.php" title="臺南一中"><img src="/ezfiles/0/1000/sys_1000_1720276_57846.png"  width="257" height="64" alt="臺南一中" border="0"></a></div></td>
+<td>
+
+
+
+<div id="HeadBanner" class="banner"><div></div><img alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'HeadBanner',1);if(obj!=null){previousSibling.id=obj.id+'_ads';divOs.openSajaxUrl(obj.id+'_ads','/bin/showads.php?Size=11&Cnt=1');}"/></div>
+
+
+</td>
+</tr></tbody></table>
+</div>
+
+
+<div class="headnav"><div class="headnav-inner"><div class="hdmenu">
+<ul>
+
+	
+	
+	
+		
+		
+		
+		
+		<li id="Hln_128" ><a href="/bin/home.php"  title="回首頁"  ><div class="menu-item">回首頁</div></a></li>
+		
+	
+	
+
+</ul></div></div></div>
+
+
+
+<div class="headsearch">
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+<script language="javascript">
+var _LoginHln = new hashUtil();
+
+var _LogoutHln = new hashUtil();
+
+var _HomeHln = new hashUtil();
+
+var _InternalHln = new hashUtil();
+_InternalHln.put("128","Hln_"+"128");
+
+if(typeof(isHome)=='undefined') var isHome=false; 
+if(typeof(loginStat)=='undefined') {
+   var UidCookie = new strUtil(divOs.Cookie.getCookie("Cust"));
+   if(UidCookie.trim()!="") loginStat="login";
+   else loginStat="logout";
+}
+dealHln(isHome,loginStat);
+function setHlnStat(p_hash,p_style){
+    var itemId,item;
+    while(!p_hash.isEOF()){
+        itemId = p_hash.read()
+/*
+        item = document.getElementById(itemId);
+        if(item!=null && typeof(item)!='undefined')
+            item.style.display = p_style;
+*/
+      item = $('div.headnav').find('#'+itemId);
+      if(p_style == 'block') item.show();
+      else item.hide();
+    }
+    p_hash.resetPointer();
+}
+
+
+function openLangUrl(p_lang) {
+	var curlang = divOs.getUrlParam("Lang");
+	if(curlang!="") {
+		var str = window.location+"";
+		window.location = str.replace("Lang="+curlang,"Lang="+p_lang);
+	}
+	else {
+	   if(window.location.href.indexOf("?")>0)
+			window.location=window.location+'&Lang='+p_lang;
+		else
+			window.location=window.location+'?Lang='+p_lang;
+	}
+}
+</script><noscript>Your browser does not support JavaScript!</noscript>
+<!-- generated at Fri Nov 09 2018 10:41:18 --></div>
+
+	</div></div>
+	<!-- Head End -->
+	<!-- MainBody Begin -->
+	<div class="mainbody"><div class="mainbody-inner">
+	<!-- Body Row Begin : row_1/row_2/row_3/row_4/row_5 -->
+		
+ 	
+   
+
+	<div class="row_0">
+		<!-- Box Div Begin -->
+		<div class="box"><div class="box-inner">
+		<!-- Box Table Begin -->
+		<table class="maincontent" cellspacing="0" cellpadding="0" width="100%" border="0" summary="">
+		<tbody><tr>
+			<!-- Column Begin -->
+	 		
+			
+			
+			
+			
+
+			
+			
+			
+			<td class="col_01" width="14%" valign="top">
+			<div class="col_01">
+				<!-- Column Top Begin -->
+				<div class="col_top">
+					<div class="ct_03">
+					<div class="ct_02">
+					<div class="ct_01">
+					</div>
+					</div>
+					</div>
+				</div>
+				<!-- Column Top End -->
+				<!-- Column Middle Begin -->
+				<div class="col_middle">
+					<div class="cm_03">
+					<div class="cm_02">
+					<div class="cm_01">
+					
+					
+					   
+						
+						<div id="Dyn_1_1" class="M10219 M10219_1  ">
+
+<div class="module module-um md_style99">
+
+
+
+
+<div class="md_top hide_title "><div class="mt_03"><div class="mt_02"><div class="mt_01">
+	
+</div></div></div></div>
+
+
+<div class="md_middle"><div class="mm_03"><div class="mm_02"><div class="mm_01">
+
+
+<p>
+<style type="text/css">.M10219{
+     position:relative;
+     z-index:999;
+}
+ .M10219  .module-um{
+    position:absolute;
+    top:0px;
+    left:130px;
+    width:550px;
+}
+</style>
+</p>
+<p><marquee behavior="SCROLL" direction="LEFT" scrollamount="10" scrolldelay="300">
+<div style="color:#ff0000;"><a href="https://military.tnfsh.tn.edu.tw/files/15-1010-11598,c577-1.php" style="text-align: initial; font-family: verdana, arial, verdana; font-weight: 700;">臺南一中服裝學號繡製說明</a><span style="text-align: initial; color: rgb(66, 66, 66); font-family: verdana, arial, verdana; font-weight: 700;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><a href="https://military.tnfsh.tn.edu.tw/files/15-1010-14615,c577-1.php" style="font-family: verdana, arial, verdana; font-weight: 700;">臺南一中學生服飾禮儀公約</a><span style="color: rgb(66, 66, 66); font-family: verdana, arial, verdana; font-weight: 700;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><a href="https://general.tnfsh.tn.edu.tw/files/13-1001-14799-1.php?Lang=zh-tw" style="text-align: initial; font-family: verdana, arial, verdana; font-weight: 700;">網球場BOT案公聽會會議記錄</a><span style="text-align: initial; color: rgb(66, 66, 66); font-family: verdana, arial, verdana; font-weight: 700;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: rgb(66, 66, 66); font-family: verdana, arial, verdana; font-weight: 700; text-align: initial;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></div>
+</marquee></p>
+ 
+
+</div></div></div></div>
+<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+
+<!-- generated at Fri Nov 09 2018 10:41:18 --></div>
+
+					
+					
+					   
+						
+						<div id="Dyn_1_2" class="M10679 M10679_77  ">
+
+<div class="module module-link md_style1 self">
+	
+
+
+
+<div class="md_top hide_title "><div class="mt_03"><div class="mt_02"><div class="mt_01">
+	
+</div></div></div></div>
+
+
+	<div class="md_middle">
+	<div class="mm_03"><div class="mm_02"><div class="mm_01">
+		
+		
+		<table summary="list" cellspacing="0" cellpadding="0" border="0" width="100%" class="baseTB list_TIDY">
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+		
+		
+	</div></div></div>
+	</div>
+	<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+
+<!-- generated at Fri Nov 09 2018 10:41:18 --></div>
+
+					
+					
+					   
+						
+						<div id="Dyn_1_3" class="M1 M1_0  ">
+<div class="module module-cgmenu">
+
+
+
+
+<div class="md_top show_title "><div class="mt_03"><div class="mt_02"><div class="mt_01">
+	<div class="h3">分類清單</div>
+</div></div></div></div>
+
+
+<div class="md_middle"><div class="mm_03"><div class="mm_02"><div class="mm_01">
+
+
+<div class="cgmenu " >
+<!--[if lte IE 6]>
+<style type="text/css">
+@import url("https://www.tnfsh.tn.edu.tw/style/22/style-ie6.css");
+</style>
+<![endif]-->
+<ul id="MenuTop">
+
+	
+	
+		
+		<li id="Cg_954"><a onkeypress="" href="https://study.tnfsh.tn.edu.tw/files/11-1003-953.php?Lang=zh-tw" title="十二年國民基本教育108新課綱專區" target="_self"><div class="menu-item ">十二年國民基本教育108新課綱專區</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_758"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/11-1000-758.php?Lang=zh-tw" title="TNFSH Profile" target="_self"><div class="menu-item ">TNFSH Profile</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_963"><a onkeypress="" href="https://guidance.tnfsh.tn.edu.tw/files/11-1007-962.php" title="108學年度升學資訊專區" target="_self"><div class="menu-item ">108學年度升學資訊專區</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_839"><a onkeypress="" href="https://www.facebook.com/%E8%87%BA%E5%8D%97%E4%B8%80%E4%B8%AD%E7%B2%89%E7%B5%B2%E9%A0%81-157207831317754/?ref=bookmarks" title="南一中粉絲專頁" target="_blank"><div class="menu-item ">南一中粉絲專頁</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_435"><a onkeypress="" href="http://w3.tnfsh.tn.edu.tw/history/" title="細說南一中" target="_blank"><div class="menu-item ">細說南一中</div></a></li>
+		
+	
+
+	
+	
+		<li id="Cg_113" onfocus="fixMenuPosition(this,'Cgl_113')" onmouseover="fixMenuPosition(this,'Cgl_113')"><a onkeypress="" class="drop " href="http://www.tnfsh.tn.edu.tw/files/11-1000-113.php?Lang=zh-tw" title="行政處室" target="_self">
+    <div class="menu-item "><span class="cgarrow"><span></span></span>行政處室<span class="cgnumber"></span></div><!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table summary=""><tr><td><![endif]--><div ><ul id="Cgl_113">
+		
+		
+	
+
+	
+	
+		
+		<li id="Cg_777"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/13-1000-6633.php" title="行政職掌一覽表" target="_self"><div class="menu-item ">行政職掌一覽表</div></a></li>
+		
+	
+
+	
+	
+		<li id="Cg_114" onfocus="fixMenuPosition(this,'Cgl_114')" onmouseover="fixMenuPosition(this,'Cgl_114')"><a onkeypress="" class="drop " href="http://www.tnfsh.tn.edu.tw/files/11-1000-114.php?Lang=zh-tw" title="校長室" target="_self">
+    <div class="menu-item "><span class="cgarrow"><span></span></span>校長室<span class="cgnumber"></span></div><!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table summary=""><tr><td><![endif]--><div ><ul id="Cgl_114">
+		
+		
+	
+
+	
+	
+		
+		<li id="Cg_461"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/11-1000-114.php#flag1" title="辦學願景" target="_self"><div class="menu-item ">辦學願景</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_462"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/11-1000-114.php#flag2" title="經營理念" target="_self"><div class="menu-item ">經營理念</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_463"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/11-1000-114.php#flag3" title="經營主軸" target="_self"><div class="menu-item ">經營主軸</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_464"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/11-1000-114.php#flag4" title="辦學理念" target="_self"><div class="menu-item ">辦學理念</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_465"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/11-1000-114.php#flag5" title="校長小檔案" target="_self"><div class="menu-item ">校長小檔案</div></a></li>
+		
+	
+
+	</ul></div><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+	
+
+	
+	
+		
+		<li id="Cg_115"><a onkeypress="" href="http://study.tnfsh.tn.edu.tw" title="教務處" target="_self"><div class="menu-item ">教務處</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_116"><a onkeypress="" href="http://student.tnfsh.tn.edu.tw" title="學務處" target="_self"><div class="menu-item ">學務處</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_117"><a onkeypress="" href="http://general.tnfsh.tn.edu.tw" title="總務處" target="_self"><div class="menu-item ">總務處</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_118"><a onkeypress="" href="http://library.tnfsh.tn.edu.tw" title="圖書館" target="_self"><div class="menu-item ">圖書館</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_119"><a onkeypress="" href="http://guidance.tnfsh.tn.edu.tw" title="輔導室" target="_self"><div class="menu-item ">輔導室</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_123"><a onkeypress="" href="http://military.tnfsh.tn.edu.tw/" title="教官室" target="_blank"><div class="menu-item ">教官室</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_120"><a onkeypress="" href="http://personel.tnfsh.tn.edu.tw" title="人事室" target="_self"><div class="menu-item ">人事室</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_121"><a onkeypress="" href="http://accounting.tnfsh.tn.edu.tw" title="主計室" target="_self"><div class="menu-item ">主計室</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_122"><a onkeypress="" href="http://night.tnfsh.tn.edu.tw" title="進修部" target="_blank"><div class="menu-item ">進修部</div></a></li>
+		
+	
+
+	</ul></div><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+	
+
+	
+	
+		
+		<li id="Cg_139"><a onkeypress="" href="http://teach.tnfsh.tn.edu.tw" title="教學單位" target="_blank"><div class="menu-item ">教學單位</div></a></li>
+		
+	
+
+	
+	
+		<li id="Cg_140" onfocus="fixMenuPosition(this,'Cgl_140')" onmouseover="fixMenuPosition(this,'Cgl_140')"><a onkeypress="" class="drop " href="http://www.tnfsh.tn.edu.tw/files/11-1000-140.php?Lang=zh-tw" title="學生活動" target="_self">
+    <div class="menu-item "><span class="cgarrow"><span></span></span>學生活動<span class="cgnumber"></span></div><!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table summary=""><tr><td><![endif]--><div ><ul id="Cgl_140">
+		
+		
+	
+
+	
+	
+		
+		<li id="Cg_416"><a onkeypress="" href="http://student.tnfsh.tn.edu.tw/files/11-1002-515.php" title="學生社團" target="_self"><div class="menu-item ">學生社團</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_782"><a onkeypress="" href="http://student.tnfsh.tn.edu.tw/files/11-1002-781.php" title="國際教育交流" target="_self"><div class="menu-item ">國際教育交流</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_417"><a onkeypress="" href="https://www.facebook.com/tnfsh.travel" title="國際教育旅行" target="_blank"><div class="menu-item ">國際教育旅行</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_421"><a onkeypress="" href="https://docs.google.com/forms/d/1PBvaoCS2PHh82Ir2hkbtY1yZVGs1wQ_g3Kzum23amSk/viewform" title="學生意見反映單" target="_blank"><div class="menu-item ">學生意見反映單</div></a></li>
+		
+	
+
+	</ul></div><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+	
+
+	
+	
+		<li id="Cg_873" onfocus="fixMenuPosition(this,'Cgl_873')" onmouseover="fixMenuPosition(this,'Cgl_873')"><a onkeypress="" class="drop " href="http://www.tnfsh.tn.edu.tw/files/11-1000-873.php?Lang=zh-tw" title="學生成果" target="_self">
+    <div class="menu-item "><span class="cgarrow"><span></span></span>學生成果<span class="cgnumber"></span></div><!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table summary=""><tr><td><![endif]--><div ><ul id="Cgl_873">
+		
+		
+	
+
+	
+	
+		<li id="Cg_874" onfocus="fixMenuPosition(this,'Cgl_874')" onmouseover="fixMenuPosition(this,'Cgl_874')"><a onkeypress="" class="drop " href="http://www.tnfsh.tn.edu.tw/files/11-1000-874.php?Lang=zh-tw" title="科學類" target="_self">
+    <div class="menu-item "><span class="cgarrow"><span></span></span>科學類<span class="cgnumber"></span></div><!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table summary=""><tr><td><![endif]--><div ><ul id="Cgl_874">
+		
+		
+	
+
+	
+	
+		
+		<li id="Cg_875"><a onkeypress="" href="http://www.yenchenchen.org" title="107級陳彥辰" target="_blank"><div class="menu-item ">107級陳彥辰</div></a></li>
+		
+	
+
+	</ul></div><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+	
+
+	</ul></div><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+	
+
+	
+	
+		
+		<li id="Cg_124"><a onkeypress="" href="http://sec.tnfsh.tn.edu.tw/" title="科學班" target="_self"><div class="menu-item ">科學班</div></a></li>
+		
+	
+
+	
+	
+		<li id="Cg_128" onfocus="fixMenuPosition(this,'Cgl_128')" onmouseover="fixMenuPosition(this,'Cgl_128')"><a onkeypress="" class="drop " href="http://www.tnfsh.tn.edu.tw/files/11-1000-128.php?Lang=zh-tw" title="計畫執行" target="_self">
+    <div class="menu-item "><span class="cgarrow"><span></span></span>計畫執行<span class="cgnumber"></span></div><!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table summary=""><tr><td><![endif]--><div ><ul id="Cgl_128">
+		
+		
+	
+
+	
+	
+		
+		<li id="Cg_783"><a onkeypress="" href="https://teach156.wixsite.com/tnfsh-107sap" title="高中優質化計畫" target="_self"><div class="menu-item ">高中優質化計畫</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_365"><a onkeypress="" href="http://excellent.tnfsh.tn.edu.tw" title="高瞻計畫" target="_blank"><div class="menu-item ">高瞻計畫</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_366"><a onkeypress="" href="http://excellent.tnfsh.tn.edu.tw:8080/fish" title="教育部科教計畫" target="_blank"><div class="menu-item ">教育部科教計畫</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_367"><a onkeypress="" href="http://english.ncku.edu.tw" title="成功大學成鷹計畫" target="_blank"><div class="menu-item ">成功大學成鷹計畫</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_971"><a onkeypress="" href="http://digiarch.tnfsh.tn.edu.tw/" title="數位典藏計畫" target="_blank"><div class="menu-item ">數位典藏計畫</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_976"><a onkeypress="" href="/ezfiles/0/1000/img/40/107_gen_eq_2.pdf" title="107性平工作坊第二梯次" target="_self"><div class="menu-item ">107性平工作坊第二梯次</div></a></li>
+		
+	
+
+	</ul></div><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+	
+
+	
+	
+		
+		<li id="Cg_125"><a onkeypress="" href="http://center.tnfsh.tn.edu.tw" title="公民學科中心" target="_blank"><div class="menu-item ">公民學科中心</div></a></li>
+		
+	
+
+	
+	
+		<li id="Cg_130" onfocus="fixMenuPosition(this,'Cgl_130')" onmouseover="fixMenuPosition(this,'Cgl_130')"><a onkeypress="" class="drop " href="http://www.tnfsh.tn.edu.tw/files/11-1000-130.php?Lang=zh-tw" title="校內資訊服務" target="_self">
+    <div class="menu-item "><span class="cgarrow"><span></span></span>校內資訊服務<span class="cgnumber"></span></div><!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table summary=""><tr><td><![endif]--><div ><ul id="Cgl_130">
+		
+		
+	
+
+	
+	
+		
+		<li id="Cg_787"><a onkeypress="" href="https://ecloud.tnfsh.tn.edu.tw" title="臺南一中教學雲" target="_blank"><div class="menu-item ">臺南一中教學雲</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_778"><a onkeypress="" href="http://qnap.tnfsh.tn.edu.tw:8080/MSV2/" title="南一中影音平台" target="_blank"><div class="menu-item ">南一中影音平台</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_131"><a onkeypress="" href="http://mail.tnfsh.tn.edu.tw/webmail" title="WebMail" target="_blank"><div class="menu-item ">WebMail</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_132"><a onkeypress="" href="https://www.google.com/a/gm.tnfsh.tn.edu.tw/" title="南一中Gmail" target="_blank"><div class="menu-item ">南一中Gmail</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_133"><a onkeypress="" href="http://svrsql.tnfsh.tn.edu.tw/SCORESCH/" title="教師成績登錄" target="_blank"><div class="menu-item ">教師成績登錄</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_134"><a onkeypress="" href="http://svrsql.tnfsh.tn.edu.tw/web" title="社團選填志願入口" target="_blank"><div class="menu-item ">社團選填志願入口</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_135"><a onkeypress="" href="http://svrsql.tnfsh.tn.edu.tw/stdcourse/login.aspx" title="線上選課系統" target="_blank"><div class="menu-item ">線上選課系統</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_137"><a onkeypress="" href="http://svrsql.tnfsh.tn.edu.tw/sgsch/" title="學生資料導師查詢網" target="_blank"><div class="menu-item ">學生資料導師查詢網</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_261"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/13-1000-524.php?Lang=zh-tw" title="個資保護管理專區" target="_self"><div class="menu-item ">個資保護管理專區</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_820"><a onkeypress="" href="http://sp.tnfsh.tn.edu.tw/room/" title="場地預約系統" target="_blank"><div class="menu-item ">場地預約系統</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_821"><a onkeypress="" href="http://sp.tnfsh.tn.edu.tw/report/" title="南一中報修系統" target="_blank"><div class="menu-item ">南一中報修系統</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_913"><a onkeypress="" href="https://sp.tnfsh.tn.edu.tw/attend/" title="線上點名系統" target="_blank"><div class="menu-item ">線上點名系統</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_973"><a onkeypress="" href="http://svrlib.tnfsh.tn.edu.tw/webopac/bkseek.php" title="圖書館藏查詢系統" target="_self"><div class="menu-item ">圖書館藏查詢系統</div></a></li>
+		
+	
+
+	</ul></div><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+	
+
+	
+	
+		<li id="Cg_147" onfocus="fixMenuPosition(this,'Cgl_147')" onmouseover="fixMenuPosition(this,'Cgl_147')"><a onkeypress="" class="drop " href="http://www.tnfsh.tn.edu.tw/files/11-1000-147.php?Lang=zh-tw" title="學校公開資訊" target="_self">
+    <div class="menu-item "><span class="cgarrow"><span></span></span>學校公開資訊<span class="cgnumber"></span></div><!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table summary=""><tr><td><![endif]--><div ><ul id="Cgl_147">
+		
+		
+	
+
+	
+	
+		
+		<li id="Cg_150"><a onkeypress="" href="https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/img/40/1071routine.pdf" title="本學期行事曆" target="_blank"><div class="menu-item ">本學期行事曆</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_148"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/15-1000-900,c140-1.php" title="分機及E-mail一覽表" target="_self"><div class="menu-item ">分機及E-mail一覽表</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_149"><a onkeypress="" href="http://w3.tnfsh.tn.edu.tw/deanofstudies/course/course.html" title="課表查詢" target="_blank"><div class="menu-item ">課表查詢</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_151"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/11-1000-151.php?Lang=zh-tw" title="臺南一中簡訊" target="_self"><div class="menu-item ">臺南一中簡訊</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_940"><a onkeypress="" href="http://w3.tnfsh.tn.edu.tw/campus_plant/" title="校園植物導覽" target="_self"><div class="menu-item ">校園植物導覽</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_152"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/13-1000-3082.php?Lang=zh-tw" title="校區平面圖" target="_blank"><div class="menu-item ">校區平面圖</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_153"><a onkeypress="" href="http://w3.tnfsh.tn.edu.tw/main-view-2009.asp" title="體育館願景" target="_blank"><div class="menu-item ">體育館願景</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_154"><a onkeypress="" href="http://www.tnfsh.tn.edu.tw/files/11-1000-154.php?Lang=zh-tw" title="校長信箱" target="_blank"><div class="menu-item ">校長信箱</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_941"><a onkeypress="" href="https://general.tnfsh.tn.edu.tw/files/15-1001-13986,c205-1.php?Lang=zh-tw" title="本校歷年行事曆" target="_self"><div class="menu-item ">本校歷年行事曆</div></a></li>
+		
+	
+
+	</ul></div><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+	
+
+	
+	
+		
+		<li id="Cg_473"><a onkeypress="" href="http://study.tnfsh.tn.edu.tw/files/11-1003-526-1.php" title="教學進度表" target="_self"><div class="menu-item ">教學進度表</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_847"><a onkeypress="" href="http://pemis.k12ea.gov.tw" title="雲端差勤管理系統" target="_self"><div class="menu-item ">雲端差勤管理系統</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_854"><a onkeypress="" href="http://library.tnfsh.tn.edu.tw/files/13-1004-11888.php" title="優質學校認證" target="_blank"><div class="menu-item ">優質學校認證</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_912"><a onkeypress="" href="https://sp.tnfsh.tn.edu.tw/attend/" title="線上點名系統" target="_blank"><div class="menu-item ">線上點名系統</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_911"><a onkeypress="" href="/ezfiles/0/1000/img/41/228067173.pdf" title="內部控制聲明書" target="_self"><div class="menu-item ">內部控制聲明書</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_959"><a onkeypress="" href="http://new.cwk.com.tw/login_guest-cw.htm" title="天下雜誌知識庫" target="_blank"><div class="menu-item ">天下雜誌知識庫</div></a></li>
+		
+	
+
+	
+	
+		
+		<li id="Cg_960"><a onkeypress="" href="http://new.cwk.com.tw/?db=mv" title="天下雜誌影音庫" target="_blank"><div class="menu-item ">天下雜誌影音庫</div></a></li>
+		
+	
+
+</ul>
+</div></div></div></div></div>
+<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+<!-- generated at Fri Nov 09 2018 10:41:18 --></div>
+
+					
+					
+					   
+						
+						<div id="Dyn_1_4" class="M5014 M5014_0  ">
+<div class="module module-search md_style1 self">
+
+
+
+
+<div class="md_top show_title "><div class="mt_03"><div class="mt_02"><div class="mt_01">
+	<div class="h3">快速搜尋</div>
+</div></div></div></div>
+
+
+<div class="md_middle">
+<div class="mm_03">
+<div class="mm_02">
+<div class="mm_01">
+	<form name="SearchMoForm" method="post" action="/bin/index.php?Plugin=asso&Action=assosearch">
+	<div class="search-keyword">
+		<select name="SchType">
+			<option value="part" selected>子網資訊</option>
+			<option value="com">公告單位</option>
+		</select>
+		<input name="SchKey" type="text" class="keyword" value="Keyword" onclick="this.select()" onkeypress=""/>
+	</div>
+	<div class="search-button"><input class="searchbt" type="submit" name="search" value="search"></div>
+	</form>
+</div>
+</div>
+</div>
+</div>
+<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+<!-- generated at Fri Nov 09 2018 10:41:18 --></div>
+
+					
+					<div class="wrap"></div>
+					</div>
+					</div>
+					</div>
+				</div>
+				<div class="col_bottom">
+					<div class="cb_03">
+					<div class="cb_02">
+					<div class="cb_01">
+					</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			</td>
+			
+	 		
+			
+			
+			
+			
+
+			
+			
+			
+			<td class="col_02" width="55%" valign="top">
+			<div class="col_02">
+				<!-- Column Top Begin -->
+				<div class="col_top">
+					<div class="ct_03">
+					<div class="ct_02">
+					<div class="ct_01">
+					</div>
+					</div>
+					</div>
+				</div>
+				<!-- Column Top End -->
+				<!-- Column Middle Begin -->
+				<div class="col_middle">
+					<div class="cm_03">
+					<div class="cm_02">
+					<div class="cm_01">
+					
+					
+					   
+						
+						<div id="Dyn_2_1" class="M10734 M10734_1017  ">
+
+<div class="module module-special md_style1 self">
+	
+
+
+
+<div class="md_top show_title "><div class="mt_03"><div class="mt_02"><div class="mt_01">
+	<div class="h3">臺南區108特招專區</div>
+</div></div></div></div>
+
+
+	<div class="md_middle">
+	<div class="mm_03"><div class="mm_02"><div class="mm_01">
+		
+		
+		<table summary="list" cellspacing="0" cellpadding="0" border="0" width="100%" class="baseTB listSD">
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+		
+		
+	</div></div></div>
+	</div>
+	<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+
+
+<!-- generated at Tue Nov 13 2018 10:25:35 --></div>
+
+					
+					
+					   
+						
+						<div id="Dyn_2_2" class="M10232 M10232_3  ">
+
+<div id="a3fd597c52ceef36dc51c01c00cfc368d_Div" class="module module-complex md_style1 self">
+<div class="md_top">
+<div class="mt_03">
+<div class="mt_02">
+<div class="mt_01">
+<div class="submenu">
+<div class="submenu-inner">
+   <ul>
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="0" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=0;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==5 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 5;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_a3fd597c52ceef36dc51c01c00cfc368d_0"   onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+$('#sm_href_a3fd597c52ceef36dc51c01c00cfc368d_0').css('display','');
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 5;
+var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_0_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_0_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_0_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_0_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_a3fd597c52ceef36dc51c01c00cfc368d_0_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_a3fd597c52ceef36dc51c01c00cfc368d_0').val();
+      divOs.openSajaxUrl(id,url);
+   };
+var obj=divOs.getParentNodeById(this,'a3fd597c52ceef36dc51c01c00cfc368d_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+" class="active"><div><div>學生相關訊息</div></div></a></li>
+
+
+
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="-1" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=1;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==5 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 5;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_a3fd597c52ceef36dc51c01c00cfc368d_1"  onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+   $('#sm_href_a3fd597c52ceef36dc51c01c00cfc368d_1').css('display','');
+   var obj=divOs.getParentNodeById(this,'Dyn_',1);
+   var TagLen = 5;
+   var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_1_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_1_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_1_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_1_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_a3fd597c52ceef36dc51c01c00cfc368d_1_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_a3fd597c52ceef36dc51c01c00cfc368d_1').val();
+      divOs.openSajaxUrl(id,url);
+};
+var obj=divOs.getParentNodeById(this,'a3fd597c52ceef36dc51c01c00cfc368d_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+"><div><div>升學資訊</div></div></a></li>
+
+
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="-1" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=2;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==5 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 5;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_a3fd597c52ceef36dc51c01c00cfc368d_2"  onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+   $('#sm_href_a3fd597c52ceef36dc51c01c00cfc368d_2').css('display','');
+   var obj=divOs.getParentNodeById(this,'Dyn_',1);
+   var TagLen = 5;
+   var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_2_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_2_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_2_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_2_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_a3fd597c52ceef36dc51c01c00cfc368d_2_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_a3fd597c52ceef36dc51c01c00cfc368d_2').val();
+      divOs.openSajaxUrl(id,url);
+};
+var obj=divOs.getParentNodeById(this,'a3fd597c52ceef36dc51c01c00cfc368d_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+"><div><div>考試資訊</div></div></a></li>
+
+
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="-1" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=3;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==5 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 5;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_a3fd597c52ceef36dc51c01c00cfc368d_3"  onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+   $('#sm_href_a3fd597c52ceef36dc51c01c00cfc368d_3').css('display','');
+   var obj=divOs.getParentNodeById(this,'Dyn_',1);
+   var TagLen = 5;
+   var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_3_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_3_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_3_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_3_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_a3fd597c52ceef36dc51c01c00cfc368d_3_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_a3fd597c52ceef36dc51c01c00cfc368d_3').val();
+      divOs.openSajaxUrl(id,url);
+};
+var obj=divOs.getParentNodeById(this,'a3fd597c52ceef36dc51c01c00cfc368d_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+"><div><div>活動訊息</div></div></a></li>
+
+
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="-1" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=4;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==5 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 5;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_a3fd597c52ceef36dc51c01c00cfc368d_4"  onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+   $('#sm_href_a3fd597c52ceef36dc51c01c00cfc368d_4').css('display','');
+   var obj=divOs.getParentNodeById(this,'Dyn_',1);
+   var TagLen = 5;
+   var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_4_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_4_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_a3fd597c52ceef36dc51c01c00cfc368d_4_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_a3fd597c52ceef36dc51c01c00cfc368d_4_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_a3fd597c52ceef36dc51c01c00cfc368d_4_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_a3fd597c52ceef36dc51c01c00cfc368d_4').val();
+      divOs.openSajaxUrl(id,url);
+};
+var obj=divOs.getParentNodeById(this,'a3fd597c52ceef36dc51c01c00cfc368d_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+"><div><div>活動報名</div></div></a></li>
+
+
+   </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md_middle">
+<div class="mm_03">
+<div class="mm_02">
+<div class="mm_01">
+
+<div class="subcontent getlink">
+<div class="subcontent-inner">
+
+
+<div class="M10540">
+
+<div id="sm_div_a3fd597c52ceef36dc51c01c00cfc368d_0" static="on" class="showthis">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};
+divOs.openSajaxUrl(previousSibling.id,'/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/42/asso_cg_mstr-1012.htm.zh-tw&Mo=10540&Type=asso_cg_mstr&Nbr=1012&Seq=1012&Cg=cmb');;"/>
+
+
+</div>
+
+
+
+<a id="sm_href_a3fd597c52ceef36dc51c01c00cfc368d_0" href="" onkeyup="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_0_'+p_nbr).attr('tabIndex',-1);
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_0_'+p_nbr).attr('tabIndex',0);
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_1_'+p_nbr).focus();
+"></a>
+
+
+
+
+<div class="M10230">
+
+
+<div id="sm_div_a3fd597c52ceef36dc51c01c00cfc368d_1" static="off" class="hidethis">
+數據載入中...
+
+<input type="hidden" name="hd_a3fd597c52ceef36dc51c01c00cfc368d_1" id="hd_a3fd597c52ceef36dc51c01c00cfc368d_1" value="/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/30/asso_cg_mstr-1000.htm.zh-tw&Mo=10230&Type=asso_cg_mstr&Nbr=1000&Seq=1000&Cg=cmb">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};"/>
+
+</div>
+
+
+
+<a id="sm_href_a3fd597c52ceef36dc51c01c00cfc368d_1" href="" onkeyup="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_1_'+p_nbr).attr('tabIndex',-1);
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_0_'+p_nbr).attr('tabIndex',0);
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_2_'+p_nbr).focus();
+"></a>
+
+
+
+
+<div class="M10231">
+
+
+<div id="sm_div_a3fd597c52ceef36dc51c01c00cfc368d_2" static="off" class="hidethis">
+數據載入中...
+
+<input type="hidden" name="hd_a3fd597c52ceef36dc51c01c00cfc368d_2" id="hd_a3fd597c52ceef36dc51c01c00cfc368d_2" value="/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/31/asso_cg_mstr-1001.htm.zh-tw&Mo=10231&Type=asso_cg_mstr&Nbr=1001&Seq=1001&Cg=cmb">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};"/>
+
+</div>
+
+
+
+<a id="sm_href_a3fd597c52ceef36dc51c01c00cfc368d_2" href="" onkeyup="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_2_'+p_nbr).attr('tabIndex',-1);
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_0_'+p_nbr).attr('tabIndex',0);
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_3_'+p_nbr).focus();
+"></a>
+
+
+
+
+<div class="M10271">
+
+
+<div id="sm_div_a3fd597c52ceef36dc51c01c00cfc368d_3" static="off" class="hidethis">
+數據載入中...
+
+<input type="hidden" name="hd_a3fd597c52ceef36dc51c01c00cfc368d_3" id="hd_a3fd597c52ceef36dc51c01c00cfc368d_3" value="/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/32/asso_cg_mstr-1002.htm.zh-tw&Mo=10271&Type=asso_cg_mstr&Nbr=1002&Seq=1002&Cg=cmb">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};"/>
+
+</div>
+
+
+
+<a id="sm_href_a3fd597c52ceef36dc51c01c00cfc368d_3" href="" onkeyup="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_3_'+p_nbr).attr('tabIndex',-1);
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_0_'+p_nbr).attr('tabIndex',0);
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_4_'+p_nbr).focus();
+"></a>
+
+
+
+
+<div class="M10680">
+
+
+<div id="sm_div_a3fd597c52ceef36dc51c01c00cfc368d_4" static="off" class="hidethis">
+數據載入中...
+
+<input type="hidden" name="hd_a3fd597c52ceef36dc51c01c00cfc368d_4" id="hd_a3fd597c52ceef36dc51c01c00cfc368d_4" value="/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/46/asso_cg_mstr-1016.htm.zh-tw&Mo=10680&Type=asso_cg_mstr&Nbr=1016&Seq=1016&Cg=cmb">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};"/>
+
+</div>
+
+
+
+
+<a id="sm_href_a3fd597c52ceef36dc51c01c00cfc368d_4" href="" onblur="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_4_'+p_nbr).attr('tabIndex',-1);
+$('#sm_a3fd597c52ceef36dc51c01c00cfc368d_0_'+p_nbr).attr('tabIndex',0);
+"></a>
+
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+
+<!-- generated at Fri Nov 09 2018 10:41:19 --></div>
+
+					
+					
+					   
+						
+						<div id="Dyn_2_3" class="M10539 M10539_38  ">
+
+<div id="af6222c24472cf037051493e90cd3ee53_Div" class="module module-complex md_style1 self">
+<div class="md_top">
+<div class="mt_03">
+<div class="mt_02">
+<div class="mt_01">
+<div class="submenu">
+<div class="submenu-inner">
+   <ul>
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="0" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=0;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==4 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 4;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_af6222c24472cf037051493e90cd3ee53_0"   onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+$('#sm_href_af6222c24472cf037051493e90cd3ee53_0').css('display','');
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 4;
+var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_af6222c24472cf037051493e90cd3ee53_0_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_af6222c24472cf037051493e90cd3ee53_0_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_af6222c24472cf037051493e90cd3ee53_0_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_af6222c24472cf037051493e90cd3ee53_0_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_af6222c24472cf037051493e90cd3ee53_0_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_af6222c24472cf037051493e90cd3ee53_0').val();
+      divOs.openSajaxUrl(id,url);
+   };
+var obj=divOs.getParentNodeById(this,'af6222c24472cf037051493e90cd3ee53_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+" class="active"><div><div>校內相關訊息</div></div></a></li>
+
+
+
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="-1" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=1;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==4 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 4;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_af6222c24472cf037051493e90cd3ee53_1"  onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+   $('#sm_href_af6222c24472cf037051493e90cd3ee53_1').css('display','');
+   var obj=divOs.getParentNodeById(this,'Dyn_',1);
+   var TagLen = 4;
+   var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_af6222c24472cf037051493e90cd3ee53_1_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_af6222c24472cf037051493e90cd3ee53_1_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_af6222c24472cf037051493e90cd3ee53_1_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_af6222c24472cf037051493e90cd3ee53_1_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_af6222c24472cf037051493e90cd3ee53_1_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_af6222c24472cf037051493e90cd3ee53_1').val();
+      divOs.openSajaxUrl(id,url);
+};
+var obj=divOs.getParentNodeById(this,'af6222c24472cf037051493e90cd3ee53_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+"><div><div>教師研習</div></div></a></li>
+
+
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="-1" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=2;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==4 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 4;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_af6222c24472cf037051493e90cd3ee53_2"  onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+   $('#sm_href_af6222c24472cf037051493e90cd3ee53_2').css('display','');
+   var obj=divOs.getParentNodeById(this,'Dyn_',1);
+   var TagLen = 4;
+   var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_af6222c24472cf037051493e90cd3ee53_2_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_af6222c24472cf037051493e90cd3ee53_2_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_af6222c24472cf037051493e90cd3ee53_2_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_af6222c24472cf037051493e90cd3ee53_2_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_af6222c24472cf037051493e90cd3ee53_2_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_af6222c24472cf037051493e90cd3ee53_2').val();
+      divOs.openSajaxUrl(id,url);
+};
+var obj=divOs.getParentNodeById(this,'af6222c24472cf037051493e90cd3ee53_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+"><div><div>行政事務</div></div></a></li>
+
+
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="-1" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=3;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==4 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 4;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_af6222c24472cf037051493e90cd3ee53_3"  onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+   $('#sm_href_af6222c24472cf037051493e90cd3ee53_3').css('display','');
+   var obj=divOs.getParentNodeById(this,'Dyn_',1);
+   var TagLen = 4;
+   var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_af6222c24472cf037051493e90cd3ee53_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_af6222c24472cf037051493e90cd3ee53_3_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_af6222c24472cf037051493e90cd3ee53_3_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_af6222c24472cf037051493e90cd3ee53_3_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_af6222c24472cf037051493e90cd3ee53_3_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_af6222c24472cf037051493e90cd3ee53_3_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_af6222c24472cf037051493e90cd3ee53_3').val();
+      divOs.openSajaxUrl(id,url);
+};
+var obj=divOs.getParentNodeById(this,'af6222c24472cf037051493e90cd3ee53_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+"><div><div>校外來文</div></div></a></li>
+
+
+   </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md_middle">
+<div class="mm_03">
+<div class="mm_02">
+<div class="mm_01">
+
+<div class="subcontent getlink">
+<div class="subcontent-inner">
+
+
+<div class="M10541">
+
+<div id="sm_div_af6222c24472cf037051493e90cd3ee53_0" static="on" class="showthis">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};
+divOs.openSajaxUrl(previousSibling.id,'/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/43/asso_cg_mstr-1013.htm.zh-tw&Mo=10541&Type=asso_cg_mstr&Nbr=1013&Seq=1013&Cg=cmb');;"/>
+
+
+</div>
+
+
+
+<a id="sm_href_af6222c24472cf037051493e90cd3ee53_0" href="" onkeyup="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_af6222c24472cf037051493e90cd3ee53_0_'+p_nbr).attr('tabIndex',-1);
+$('#sm_af6222c24472cf037051493e90cd3ee53_0_'+p_nbr).attr('tabIndex',0);
+$('#sm_af6222c24472cf037051493e90cd3ee53_1_'+p_nbr).focus();
+"></a>
+
+
+
+
+<div class="M10529">
+
+
+<div id="sm_div_af6222c24472cf037051493e90cd3ee53_1" static="off" class="hidethis">
+數據載入中...
+
+<input type="hidden" name="hd_af6222c24472cf037051493e90cd3ee53_1" id="hd_af6222c24472cf037051493e90cd3ee53_1" value="/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/41/asso_cg_mstr-1011.htm.zh-tw&Mo=10529&Type=asso_cg_mstr&Nbr=1011&Seq=1011&Cg=cmb">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};"/>
+
+</div>
+
+
+
+<a id="sm_href_af6222c24472cf037051493e90cd3ee53_1" href="" onkeyup="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_af6222c24472cf037051493e90cd3ee53_1_'+p_nbr).attr('tabIndex',-1);
+$('#sm_af6222c24472cf037051493e90cd3ee53_0_'+p_nbr).attr('tabIndex',0);
+$('#sm_af6222c24472cf037051493e90cd3ee53_2_'+p_nbr).focus();
+"></a>
+
+
+
+
+<div class="M10272">
+
+
+<div id="sm_div_af6222c24472cf037051493e90cd3ee53_2" static="off" class="hidethis">
+數據載入中...
+
+<input type="hidden" name="hd_af6222c24472cf037051493e90cd3ee53_2" id="hd_af6222c24472cf037051493e90cd3ee53_2" value="/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/33/asso_cg_mstr-1003.htm.zh-tw&Mo=10272&Type=asso_cg_mstr&Nbr=1003&Seq=1003&Cg=cmb">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};"/>
+
+</div>
+
+
+
+<a id="sm_href_af6222c24472cf037051493e90cd3ee53_2" href="" onkeyup="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_af6222c24472cf037051493e90cd3ee53_2_'+p_nbr).attr('tabIndex',-1);
+$('#sm_af6222c24472cf037051493e90cd3ee53_0_'+p_nbr).attr('tabIndex',0);
+$('#sm_af6222c24472cf037051493e90cd3ee53_3_'+p_nbr).focus();
+"></a>
+
+
+
+
+<div class="M10273">
+
+
+<div id="sm_div_af6222c24472cf037051493e90cd3ee53_3" static="off" class="hidethis">
+數據載入中...
+
+<input type="hidden" name="hd_af6222c24472cf037051493e90cd3ee53_3" id="hd_af6222c24472cf037051493e90cd3ee53_3" value="/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/34/asso_cg_mstr-1004.htm.zh-tw&Mo=10273&Type=asso_cg_mstr&Nbr=1004&Seq=1004&Cg=cmb">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};"/>
+
+</div>
+
+
+
+
+<a id="sm_href_af6222c24472cf037051493e90cd3ee53_3" href="" onblur="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_af6222c24472cf037051493e90cd3ee53_3_'+p_nbr).attr('tabIndex',-1);
+$('#sm_af6222c24472cf037051493e90cd3ee53_0_'+p_nbr).attr('tabIndex',0);
+"></a>
+
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+
+<!-- generated at Fri Nov 09 2018 10:41:18 --></div>
+
+					
+					
+					   
+						
+						<div id="Dyn_2_4" class="M10277 M10277_9  ">
+
+<div id="a416c4357a10e70dab829ef71bc0b6f2a_Div" class="module module-complex md_style1 self">
+<div class="md_top">
+<div class="mt_03">
+<div class="mt_02">
+<div class="mt_01">
+<div class="submenu">
+<div class="submenu-inner">
+   <ul>
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="0" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=0;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==4 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 4;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_a416c4357a10e70dab829ef71bc0b6f2a_0"   onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+$('#sm_href_a416c4357a10e70dab829ef71bc0b6f2a_0').css('display','');
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 4;
+var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_0_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_0_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_0_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_0_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_a416c4357a10e70dab829ef71bc0b6f2a_0_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_a416c4357a10e70dab829ef71bc0b6f2a_0').val();
+      divOs.openSajaxUrl(id,url);
+   };
+var obj=divOs.getParentNodeById(this,'a416c4357a10e70dab829ef71bc0b6f2a_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+" class="active"><div><div>圖文區</div></div></a></li>
+
+
+
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="-1" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=1;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==4 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 4;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_a416c4357a10e70dab829ef71bc0b6f2a_1"  onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+   $('#sm_href_a416c4357a10e70dab829ef71bc0b6f2a_1').css('display','');
+   var obj=divOs.getParentNodeById(this,'Dyn_',1);
+   var TagLen = 4;
+   var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_1_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_1_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_1_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_1_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_a416c4357a10e70dab829ef71bc0b6f2a_1_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_a416c4357a10e70dab829ef71bc0b6f2a_1').val();
+      divOs.openSajaxUrl(id,url);
+};
+var obj=divOs.getParentNodeById(this,'a416c4357a10e70dab829ef71bc0b6f2a_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+"><div><div>優異表現</div></div></a></li>
+
+
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="-1" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=2;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==4 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 4;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_a416c4357a10e70dab829ef71bc0b6f2a_2"  onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+   $('#sm_href_a416c4357a10e70dab829ef71bc0b6f2a_2').css('display','');
+   var obj=divOs.getParentNodeById(this,'Dyn_',1);
+   var TagLen = 4;
+   var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_2_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_2_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_2_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_2_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_a416c4357a10e70dab829ef71bc0b6f2a_2_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_a416c4357a10e70dab829ef71bc0b6f2a_2').val();
+      divOs.openSajaxUrl(id,url);
+};
+var obj=divOs.getParentNodeById(this,'a416c4357a10e70dab829ef71bc0b6f2a_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+"><div><div>新聞剪報</div></div></a></li>
+
+
+
+
+      <li><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){nextSibling.id=nextSibling.id+'_'+obj.id;};"/><a tabindex="-1" href="javascript:void(0)" onmouseup="" onkeyup="
+var currenttab=3;
+var event = arguments[0]||window.event;
+var currentKey = event.charCode||event.keyCode;
+if(currentKey!=37 && currentKey!=39) return;
+if(currenttab==0 && currentKey==37) return;
+if((currenttab+1)==4 && currentKey==39) return;
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var TagLen = 4;
+var p_nbr=obj.id;
+for (var i=0;i<TagLen;i++){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).attr('tabIndex',-1);
+}
+if(currentKey==37){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab-1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab-1)+'_'+p_nbr).focus();
+}
+else if(currentKey==39){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab+1)+'_'+p_nbr).attr('tabIndex',0);
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+(currenttab+1)+'_'+p_nbr).focus();
+}
+" id="sm_a416c4357a10e70dab829ef71bc0b6f2a_3"  onfocus="this.onclick()" onkeypress="var event = arguments[0]||window.event;var currentKey = event.charCode||event.keyCode;if(currentKey==13) this.onclick();" onclick="
+   $('#sm_href_a416c4357a10e70dab829ef71bc0b6f2a_3').css('display','');
+   var obj=divOs.getParentNodeById(this,'Dyn_',1);
+   var TagLen = 4;
+   var p_nbr=obj.id;
+   for (var i=0;i<TagLen;i++){
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).removeClass();
+      $('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).removeClass().addClass('hidethis');
+      $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_'+i+'_'+p_nbr).attr('tabIndex',-1);
+   }
+   $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_3_'+p_nbr).removeClass().addClass('active');
+   $('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_3_'+p_nbr).removeClass().addClass('showthis');
+   $('#sm_a416c4357a10e70dab829ef71bc0b6f2a_3_'+p_nbr).attr('tabIndex',0);
+   var obj =$('#sm_div_a416c4357a10e70dab829ef71bc0b6f2a_3_'+p_nbr);
+   if (obj.attr('static')=='off'){
+      var id='sm_div_a416c4357a10e70dab829ef71bc0b6f2a_3_'+p_nbr;
+      obj.attr('static','on');
+      url = $('#hd_a416c4357a10e70dab829ef71bc0b6f2a_3').val();
+      divOs.openSajaxUrl(id,url);
+};
+var obj=divOs.getParentNodeById(this,'a416c4357a10e70dab829ef71bc0b6f2a_Div',1);
+   obj=divOs.childNode(obj,1);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+   obj=divOs.childNode(obj,0);
+obj.style.height='';
+setTimeout(resizeTrigger,1500);
+"><div><div>活動看板</div></div></a></li>
+
+
+   </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md_middle">
+<div class="mm_03">
+<div class="mm_02">
+<div class="mm_01">
+
+<div class="subcontent getlink">
+<div class="subcontent-inner">
+
+
+<div class="M10542">
+
+<div id="sm_div_a416c4357a10e70dab829ef71bc0b6f2a_0" static="on" class="showthis">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};
+divOs.openSajaxUrl(previousSibling.id,'/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/44/asso_cg_mstr-1014.htm.zh-tw&Mo=10542&Type=asso_cg_mstr&Nbr=1014&Seq=1014&Cg=cmb');;"/>
+
+
+</div>
+
+
+
+<a id="sm_href_a416c4357a10e70dab829ef71bc0b6f2a_0" href="" onkeyup="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_a416c4357a10e70dab829ef71bc0b6f2a_0_'+p_nbr).attr('tabIndex',-1);
+$('#sm_a416c4357a10e70dab829ef71bc0b6f2a_0_'+p_nbr).attr('tabIndex',0);
+$('#sm_a416c4357a10e70dab829ef71bc0b6f2a_1_'+p_nbr).focus();
+"></a>
+
+
+
+
+<div class="M10274">
+
+
+<div id="sm_div_a416c4357a10e70dab829ef71bc0b6f2a_1" static="off" class="hidethis">
+數據載入中...
+
+<input type="hidden" name="hd_a416c4357a10e70dab829ef71bc0b6f2a_1" id="hd_a416c4357a10e70dab829ef71bc0b6f2a_1" value="/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/35/asso_cg_mstr-1005.htm.zh-tw&Mo=10274&Type=asso_cg_mstr&Nbr=1005&Seq=1005&Cg=cmb">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};"/>
+
+</div>
+
+
+
+<a id="sm_href_a416c4357a10e70dab829ef71bc0b6f2a_1" href="" onkeyup="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_a416c4357a10e70dab829ef71bc0b6f2a_1_'+p_nbr).attr('tabIndex',-1);
+$('#sm_a416c4357a10e70dab829ef71bc0b6f2a_0_'+p_nbr).attr('tabIndex',0);
+$('#sm_a416c4357a10e70dab829ef71bc0b6f2a_2_'+p_nbr).focus();
+"></a>
+
+
+
+
+<div class="M10275">
+
+
+<div id="sm_div_a416c4357a10e70dab829ef71bc0b6f2a_2" static="off" class="hidethis">
+數據載入中...
+
+<input type="hidden" name="hd_a416c4357a10e70dab829ef71bc0b6f2a_2" id="hd_a416c4357a10e70dab829ef71bc0b6f2a_2" value="/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/36/asso_cg_mstr-1006.htm.zh-tw&Mo=10275&Type=asso_cg_mstr&Nbr=1006&Seq=1006&Cg=cmb">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};"/>
+
+</div>
+
+
+
+<a id="sm_href_a416c4357a10e70dab829ef71bc0b6f2a_2" href="" onkeyup="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_a416c4357a10e70dab829ef71bc0b6f2a_2_'+p_nbr).attr('tabIndex',-1);
+$('#sm_a416c4357a10e70dab829ef71bc0b6f2a_0_'+p_nbr).attr('tabIndex',0);
+$('#sm_a416c4357a10e70dab829ef71bc0b6f2a_3_'+p_nbr).focus();
+"></a>
+
+
+
+
+<div class="M10276">
+
+
+<div id="sm_div_a416c4357a10e70dab829ef71bc0b6f2a_3" static="off" class="hidethis">
+數據載入中...
+
+<input type="hidden" name="hd_a416c4357a10e70dab829ef71bc0b6f2a_3" id="hd_a416c4357a10e70dab829ef71bc0b6f2a_3" value="/bin/showmodule.php?O=1000&F=/0/1000/modules/asso_cg_mstr/37/asso_cg_mstr-1007.htm.zh-tw&Mo=10276&Type=asso_cg_mstr&Nbr=1007&Seq=1007&Cg=cmb">
+</div><img class="img_loading" alt="" src="/images/clear.gif" onload="var obj=divOs.getParentNodeById(this,'Dyn_',1);if(obj!=null){previousSibling.id=previousSibling.id+'_'+obj.id;};"/>
+
+</div>
+
+
+
+
+<a id="sm_href_a416c4357a10e70dab829ef71bc0b6f2a_3" href="" onblur="
+var obj=divOs.getParentNodeById(this,'Dyn_',1);
+var p_nbr=obj.id;
+$(this).css('display','none');
+$('#sm_a416c4357a10e70dab829ef71bc0b6f2a_3_'+p_nbr).attr('tabIndex',-1);
+$('#sm_a416c4357a10e70dab829ef71bc0b6f2a_0_'+p_nbr).attr('tabIndex',0);
+"></a>
+
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+
+<!-- generated at Fri Nov 09 2018 10:41:19 --></div>
+
+					
+					<div class="wrap"></div>
+					</div>
+					</div>
+					</div>
+				</div>
+				<div class="col_bottom">
+					<div class="cb_03">
+					<div class="cb_02">
+					<div class="cb_01">
+					</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			</td>
+			
+	 		
+			
+			
+			
+			
+
+			
+			
+			
+			<td class="col_03" width="31%" valign="top">
+			<div class="col_03">
+				<!-- Column Top Begin -->
+				<div class="col_top">
+					<div class="ct_03">
+					<div class="ct_02">
+					<div class="ct_01">
+					</div>
+					</div>
+					</div>
+				</div>
+				<!-- Column Top End -->
+				<!-- Column Middle Begin -->
+				<div class="col_middle">
+					<div class="cm_03">
+					<div class="cm_02">
+					<div class="cm_01">
+					
+					
+					   
+						
+						<div id="Dyn_3_1" class="M10218 M10218_41  ">
+
+<div class="module module-link md_style99 self">
+	<div class="title_pic"><img src="/ezfiles/0/1000/title/motitle_ln_mstr_41_9420077_18497.gif"  height="20" width="138"   title="榮譽榜" alt="榮譽榜"><div class="readmore headmore"><a href="http://www.tnfsh.tn.edu.tw/files/50-1000-41-1.php?Lang=zh-tw"  title="More" >More</a></div></div>
+
+
+	<div class="md_middle">
+	<div class="mm_03"><div class="mm_02"><div class="mm_01">
+		
+		
+		
+
+
+
+
+
+<div class="newsflash">
+
+
+
+
+
+
+
+<!--selana-->
+
+
+
+
+
+
+
+
+
+
+
+<!--selana-->
+
+
+
+
+
+
+
+
+
+
+
+<!--selana-->
+
+
+
+
+
+
+
+
+
+
+
+<!--selana-->
+
+
+
+
+
+
+
+
+
+
+
+<!--selana-->
+
+
+
+
+
+
+
+
+
+
+
+<!--selana-->
+
+
+<object ID="focus_flash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="242" height="268">
+<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="/js/focus.swf"><param name="quality" value="high"><param name="bgcolor">
+<param name="menu" value="false"><param name="wmode" value="transparent">
+<param name="FlashVars" value="pics=https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_349_4188498_71175.jpg|https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_362_5953898_60788.jpg|https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_367_9124710_80057.jpg|https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_372_52858_06475.jpg|https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_296_7174868_17486.jpg|https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_322_7952456_53673.jpg&links=http%3A%2F%2Fstudy.tnfsh.tn.edu.tw%2Ffiles%2F15-1003-11547%2Cc630-1.php%3FLang%3Dzh-tw|http%3A%2F%2Fstudy.tnfsh.tn.edu.tw%2Ffiles%2F15-1003-11659%2Cc630-1.php|https%3A%2F%2Fstudy.tnfsh.tn.edu.tw%2Ffiles%2F13-1003-13203-1.php%3FLang%3Dzh-tw||https%3A%2F%2Fstudy.tnfsh.tn.edu.tw%2Ffiles%2F13-1003-13720-1.php%3FLang%3Dzh-tw|https%3A%2F%2Fstudy.tnfsh.tn.edu.tw%2Ffiles%2F13-1003-13866-1.php%3FLang%3Dzh-tw&texts=林孟黌榮獲2016年國際生奧金牌|許育綸榮獲2016年國際地奧金牌獎|李雙言榮獲2017年國際數奧銀牌獎|林暐祐榮獲2017年國際化奧金牌|本校參加第19屆TRML榮獲團體金牌|第16屆高中地理奧林匹亞競賽榮獲佳績&borderwidth=242&borderheight=198&textheight=70">
+<embed ID="focus_flash" src="/js/focus.swf" wmode="transparent" FlashVars="pics=https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_349_4188498_71175.jpg|https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_362_5953898_60788.jpg|https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_367_9124710_80057.jpg|https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_372_52858_06475.jpg|https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_296_7174868_17486.jpg|https://www.tnfsh.tn.edu.tw/ezfiles/0/1000/pictures/linkdet_322_7952456_53673.jpg&links=http%3A%2F%2Fstudy.tnfsh.tn.edu.tw%2Ffiles%2F15-1003-11547%2Cc630-1.php%3FLang%3Dzh-tw|http%3A%2F%2Fstudy.tnfsh.tn.edu.tw%2Ffiles%2F15-1003-11659%2Cc630-1.php|https%3A%2F%2Fstudy.tnfsh.tn.edu.tw%2Ffiles%2F13-1003-13203-1.php%3FLang%3Dzh-tw||https%3A%2F%2Fstudy.tnfsh.tn.edu.tw%2Ffiles%2F13-1003-13720-1.php%3FLang%3Dzh-tw|https%3A%2F%2Fstudy.tnfsh.tn.edu.tw%2Ffiles%2F13-1003-13866-1.php%3FLang%3Dzh-tw&texts=林孟黌榮獲2016年國際生奧金牌|許育綸榮獲2016年國際地奧金牌獎|李雙言榮獲2017年國際數奧銀牌獎|林暐祐榮獲2017年國際化奧金牌|本校參加第19屆TRML榮獲團體金牌|第16屆高中地理奧林匹亞競賽榮獲佳績&borderwidth=242&borderheight=198&textheight=70" menu="false" quality="high" width="242" height="268" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+<div style="display:none">Description</div>
+</object>
+
+
+</div>
+
+		
+		
+		<div class="readmore"><a href="http://www.tnfsh.tn.edu.tw/files/50-1000-41-1.php?Lang=zh-tw" title="More" > More</a></div>
+		
+	</div></div></div>
+	</div>
+	<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+
+<!-- generated at Fri Nov 09 2018 10:41:18 --></div>
+
+					
+					
+					   
+						
+						<div id="Dyn_3_2" class="M10675 M10675_73  ">
+
+<div class="module module-link md_style1 self">
+	
+
+
+
+<div class="md_top show_title "><div class="mt_03"><div class="mt_02"><div class="mt_01">
+	<div class="h3">學生園地<div class="readmore headmore"><a href="http://www.tnfsh.tn.edu.tw/files/50-1000-73-1.php?Lang=zh-tw" title="More" >More</a></div></div>
+</div></div></div></div>
+
+
+	<div class="md_middle">
+	<div class="mm_03"><div class="mm_02"><div class="mm_01">
+		
+		
+		<table summary="list" cellspacing="0" cellpadding="0" border="0" width="100%" class="baseTB list_TIDY">
+
+
+
+
+
+
+<tr>
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+</tr>
+
+
+
+<tr class="row_1">
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="25%">
+
+
+<a class="item-image" href="https://sp.tnfsh.tn.edu.tw/certificate_of_enrolment/student/" target="_blank" >
+
+<img src="/ezfiles/0/1000/pictures/linkdet_391_3939377_22915.png"  width="55" height="55"   alt="在學證明書下載" title="在學證明書下載" >
+
+</a>
+
+
+<div class="h5 title-noicon title-center">
+	
+	<span class="ptname "><a href="https://sp.tnfsh.tn.edu.tw/certificate_of_enrolment/student/" target="_blank"  title="在學證明書下載">在學證明書下載</a></span>
+	
+</div>
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="25%">
+
+
+<a class="item-image" href="http://svrsql.tnfsh.tn.edu.tw/SCORESTD/" target="_blank" >
+
+<img src="/ezfiles/0/1000/pictures/linkdet_340_1036076_40925.png"  width="55" height="55"   alt="成績查詢" title="成績查詢" >
+
+</a>
+
+
+<div class="h5 title-noicon title-center">
+	
+	<span class="ptname "><a href="http://svrsql.tnfsh.tn.edu.tw/SCORESTD/" target="_blank"  title="成績查詢">成績查詢</a></span>
+	
+</div>
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="25%">
+
+
+<a class="item-image" href="https://www.i-pass.com.tw/Missdigitalstudentidcards" target="_blank" >
+
+<img src="/ezfiles/0/1000/pictures/linkdet_369_7624786_73399.png"  width="55" height="55"   alt="學生證掛失" title="學生證掛失" >
+
+</a>
+
+
+<div class="h5 title-noicon title-center">
+	
+	<span class="ptname "><a href="https://www.i-pass.com.tw/Missdigitalstudentidcards" target="_blank"  title="學生證掛失">學生證掛失</a></span>
+	
+</div>
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="25%">
+
+
+<a class="item-image" href="http://svrsql.tnfsh.tn.edu.tw/stdcourse3" target="_blank" >
+
+<img src="/ezfiles/0/1000/pictures/linkdet_341_3386415_40946.png"  width="55" height="55"   alt="線上選課" title="線上選課" >
+
+</a>
+
+
+<div class="h5 title-noicon title-center">
+	
+	<span class="ptname "><a href="http://svrsql.tnfsh.tn.edu.tw/stdcourse3" target="_blank"  title="線上選課">線上選課</a></span>
+	
+</div>
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+</tr>
+<tr>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+		
+		
+		<div class="readmore"><a href="http://www.tnfsh.tn.edu.tw/files/50-1000-73-1.php?Lang=zh-tw" title="More" > More</a></div>
+		
+	</div></div></div>
+	</div>
+	<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+
+<!-- generated at Fri Nov 09 2018 10:41:19 --></div>
+
+					
+					
+					   
+						
+						<div id="Dyn_3_3" class="M10677 M10677_75  ">
+
+<div class="module module-link md_style1 self">
+	
+
+
+
+<div class="md_top show_title "><div class="mt_03"><div class="mt_02"><div class="mt_01">
+	<div class="h3">教學平台<div class="readmore headmore"><a href="http://www.tnfsh.tn.edu.tw/files/50-1000-75-1.php?Lang=zh-tw" title="More" >More</a></div></div>
+</div></div></div></div>
+
+
+	<div class="md_middle">
+	<div class="mm_03"><div class="mm_02"><div class="mm_01">
+		
+		
+		<table summary="list" cellspacing="0" cellpadding="0" border="0" width="100%" class="baseTB list_TIDY">
+
+
+
+
+
+
+<tr>
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+</tr>
+
+
+
+<tr class="row_1">
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="25%">
+
+
+<a class="item-image" href="http://moodle.tnfsh.tn.edu.tw/" target="_blank" >
+
+<img src="/ezfiles/0/1000/pictures/linkdet_352_7608676_41646.png"  width="55" height="55"   alt="教學網" title="教學網" >
+
+</a>
+
+
+<div class="h5 title-noicon title-center">
+	
+	<span class="ptname "><a href="http://moodle.tnfsh.tn.edu.tw/" target="_blank"  title="教學網">教學網</a></span>
+	
+</div>
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="25%">
+
+
+<a class="item-image" href="http://classroom.google.com" target="_blank" >
+
+<img src="/ezfiles/0/1000/pictures/linkdet_353_7251311_44509.png"  width="55" height="55"   alt="G Class" title="G Class" >
+
+</a>
+
+
+<div class="h5 title-noicon title-center">
+	
+	<span class="ptname "><a href="http://classroom.google.com" target="_blank"  title="G Class">G Class</a></span>
+	
+</div>
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="25%">
+
+
+<a class="item-image" href="http://judge.tnfsh.tn.edu.tw:8080/" target="_blank" >
+
+<img src="/ezfiles/0/1000/pictures/linkdet_354_938719_43404.png"  width="55" height="55"   alt="線上解題" title="線上解題" >
+
+</a>
+
+
+<div class="h5 title-noicon title-center">
+	
+	<span class="ptname "><a href="http://judge.tnfsh.tn.edu.tw:8080/" target="_blank"  title="線上解題">線上解題</a></span>
+	
+</div>
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="25%">
+
+
+<a class="item-image" href="https://ecloud.tnfsh.tn.edu.tw/navigate/" target="_blank" >
+
+<img src="/ezfiles/0/1000/pictures/linkdet_356_8774253_43424.png"  width="55" height="55"   alt="教學雲" title="教學雲" >
+
+</a>
+
+
+<div class="h5 title-noicon title-center">
+	
+	<span class="ptname "><a href="https://ecloud.tnfsh.tn.edu.tw/navigate/" target="_blank"  title="教學雲">教學雲</a></span>
+	
+</div>
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+</tr>
+<tr>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+		
+		
+		<div class="readmore"><a href="http://www.tnfsh.tn.edu.tw/files/50-1000-75-1.php?Lang=zh-tw" title="More" > More</a></div>
+		
+	</div></div></div>
+	</div>
+	<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+
+<!-- generated at Fri Nov 09 2018 10:41:19 --></div>
+
+					
+					
+					   
+						
+						<div id="Dyn_3_4" class="M10678 M10678_76  ">
+
+<div class="module module-link md_style1 self">
+	
+
+
+
+<div class="md_top show_title "><div class="mt_03"><div class="mt_02"><div class="mt_01">
+	<div class="h3">一中之友</div>
+</div></div></div></div>
+
+
+	<div class="md_middle">
+	<div class="mm_03"><div class="mm_02"><div class="mm_01">
+		
+		
+		<table summary="list" cellspacing="0" cellpadding="0" border="0" width="100%" class="baseTB list_TIDY">
+
+
+
+
+
+
+<tr>
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+	<td class="null"><div class="null"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="null"><div class="null"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="null"><div class="null"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+</tr>
+
+
+
+<tr class="row_1">
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="25%">
+
+
+<a class="item-image" href="https://www.facebook.com/TNFSHPTA/" target="_blank" >
+
+<img src="/ezfiles/0/1000/pictures/linkdet_357_5501319_39841.png"  width="55" height="55"   alt="家長會粉絲頁" title="家長會粉絲頁" >
+
+</a>
+
+
+<div class="h5 title-noicon title-center">
+	
+	<span class="ptname "><a href="https://www.facebook.com/TNFSHPTA/" target="_blank"  title="家長會粉絲頁">家長會粉絲頁</a></span>
+	
+</div>
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="25%">
+
+
+<a class="item-image" href="http://alumni-ntfshs.org.tw/" target="_blank" >
+
+<img src="/ezfiles/0/1000/pictures/linkdet_358_2374019_39823.png"  width="55" height="55"   alt="校友會" title="校友會" >
+
+</a>
+
+
+<div class="h5 title-noicon title-center">
+	
+	<span class="ptname "><a href="http://alumni-ntfshs.org.tw/" target="_blank"  title="校友會">校友會</a></span>
+	
+</div>
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="25%">
+
+
+<a class="item-image" href="http://tnfshretire.pixnet.net/blog" target="_blank" >
+
+<img src="/ezfiles/0/1000/pictures/linkdet_359_8314389_39803.png"  width="55" height="55"   alt="退休聯誼會" title="退休聯誼會" >
+
+</a>
+
+
+<div class="h5 title-noicon title-center">
+	
+	<span class="ptname "><a href="http://tnfshretire.pixnet.net/blog" target="_blank"  title="退休聯誼會">退休聯誼會</a></span>
+	
+</div>
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td class="null"><div class="null"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="null" width="25%"> </td>
+<td class="null"><div class="null"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+</tr>
+
+<tr>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+<td class="null"><div class="null"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="null"><div class="null"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="null"><div class="null"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+</tr>
+
+
+
+</table>
+
+
+
+
+		
+		
+	</div></div></div>
+	</div>
+	<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+
+<!-- generated at Fri Nov 09 2018 10:41:20 --></div>
+
+					
+					
+					   
+						
+						<div id="Dyn_3_5" class="M10217 M10217_40  ">
+
+<div class="module module-link md_style99 self">
+	<div class="title_pic"><img src="/ezfiles/0/1000/title/motitle_ln_mstr_40_764843_17753.gif"  height="16" width="102"   title="相關連結" alt="相關連結"><div class="readmore headmore"><a href="http://www.tnfsh.tn.edu.tw/files/50-1000-40-1.php?Lang=zh-tw"  title="More" >More</a></div></div>
+
+
+	<div class="md_middle">
+	<div class="mm_03"><div class="mm_02"><div class="mm_01">
+		
+		
+		<table summary="list" cellspacing="0" cellpadding="0" border="0" width="100%" class="baseTB list_TIDY">
+
+
+
+
+
+
+<tr>
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+</tr>
+
+
+
+<tr class="row_1">
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="50%">
+<div class="h5">
+
+
+
+<span class="ptname "><a href="https://cloud.edu.tw/" target="_blank"  title="教育雲"  >教育雲</a></span>
+</div>
+
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="50%">
+<div class="h5">
+
+
+
+<span class="ptname "><a href="https://i.win.org.tw/iWIN/" target="_blank"  title="iWIN網路內容防護機構"  >iWIN網路內容防護機構</a></span>
+</div>
+
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+</tr>
+<tr>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+</tr>
+
+
+
+<tr class="row_2">
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="50%">
+<div class="h5">
+
+
+
+<span class="ptname "><a href="http://www.edu.tw" target="_blank"  title="教育部"  >教育部</a></span>
+</div>
+
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="50%">
+<div class="h5">
+
+
+
+<span class="ptname "><a href="https://ann.cloud.ncnu.edu.tw/" target="_blank"  title="教育部國教署公文公告平台"  >教育部國教署公文公告平台</a></span>
+</div>
+
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+</tr>
+<tr>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+</tr>
+
+
+	
+
+
+<tr class="row_1">
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="50%">
+<div class="h5">
+
+
+
+<span class="ptname "><a href="http://12basic.edu.tw/" target="_blank"  title="12年國教主題網"  >12年國教主題網</a></span>
+</div>
+
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="50%">
+<div class="h5">
+
+
+
+<span class="ptname "><a href="https://crc.sfaa.gov.tw/crc_front/index.php" target="_blank"  title="兒童權利公約資訊網"  >兒童權利公約資訊網</a></span>
+</div>
+
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+</tr>
+<tr>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+	<td class="tl"><div class="tl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tc"><div class="tc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+	<td class="tr"><div class="tr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+</tr>
+
+
+
+<tr class="row_2">
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="50%">
+<div class="h5">
+
+
+
+<span class="ptname "><a href="http://140.111.1.88/" target="_blank"  title="教育部反霸凌專區"  >教育部反霸凌專區</a></span>
+</div>
+
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+
+
+
+	
+<td class="ml"><div class="ml"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="mc" width="50%">
+<div class="h5">
+
+
+
+<span class="ptname "><a href="http://epaper.edu.tw/" target="_blank"  title="教育部電子報"  >教育部電子報</a></span>
+</div>
+
+
+
+</td>
+<td class="mr"><div class="mr"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+
+
+
+</tr>
+<tr>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+<td class="bl"><div class="bl"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="bc"><div class="bc"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+<td class="br"><div class="br"><img src="/images/clear.gif" border="0" alt="" width="2px" height="2px" /></div></td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+		
+		
+		<div class="readmore"><a href="http://www.tnfsh.tn.edu.tw/files/50-1000-40-1.php?Lang=zh-tw" title="More" > More</a></div>
+		
+	</div></div></div>
+	</div>
+	<div class="md_bottom"><div class="mb_03"><div class="mb_02"><div class="mb_01"><img src="/images/clear.gif" alt=""/></div></div></div></div>
+
+</div>
+
+<!-- generated at Fri Nov 09 2018 10:41:20 --></div>
+
+					
+					<div class="wrap"></div>
+					</div>
+					</div>
+					</div>
+				</div>
+				<div class="col_bottom">
+					<div class="cb_03">
+					<div class="cb_02">
+					<div class="cb_01">
+					</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			</td>
+			
+	 	
+		</tr></tbody>
+		</table>
+		<!-- Box Table End -->
+		</div></div>
+		<!-- Box Div End -->
+	</div>
+	
+		
+ 	
+   
+		
+ 	
+   
+		
+ 	
+   
+		
+ 	
+   
+	
+	<!-- Body Row End -->
+	</div></div>
+	<!-- MainBody End -->
+
+	<div class="mainfoot"><div class="mainfoot-inner">
+	<div class="foot_03"><div class="foot_02"><div class="foot_01">
+   
+	<div id="Dyn_footer">
+<div class="copyright"><p>
+<style type="text/css">.list_TABLE td .h5{ white-space: normal !important; width: 330px;}
+.list_TABLE td{width: auto !important;}
+.form-table table td[width="1%"] {width: auto;}
+</style>
+</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td style="padding-left: 220px">
+<p>701台南市民族路一段一號 No. 1, Sec. 1, Mintzu Rd., Tainan, Taiwan 701, R.O.C.<br />
+Phone : 06-2371206 Fax : 06-2348972 E-mail: <a href="https://www.tnfsh.tn.edu.tw/files/15-1000-900,c140-1.php">Page</a><br />
+Unified Business No. : 69116202<br />
+Copyright &copy; Tainan First Senior High School. All Rights Reserved.</p>
+</td>
+<td><a href="http://www.tnfsh.tn.edu.tw/files/15-1000-391,c152-1.php" style="color: #0096ff">學校位置圖</a></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</div>
+<!-- generated at Fri Nov 09 2018 10:41:20 --></div>
+
+	</div></div></div>
+	</div></div>
+	<!-- Foot End -->
+</div></div></div>
+</div>
+<!-- Outer Container End  -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('body').addClass('page_bg_' + Math.ceil(Math.random() * 5));
+});
+</script>
+</body>
+</html>
+<!-- generated at Fri Nov 09 2018 10:38:14 -->
